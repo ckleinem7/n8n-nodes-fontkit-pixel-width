@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ExampleNode = void 0;
+exports.FontKitPixelLength = void 0;
 const n8n_workflow_1 = require("n8n-workflow");
 const fontkit_1 = require("fontkit");
-class ExampleNode {
+class FontKitPixelLength {
     constructor() {
         this.description = {
             displayName: 'Example Node',
@@ -75,5 +75,5 @@ class ExampleNode {
         return [items];
     }
 }
-exports.ExampleNode = ExampleNode;
+exports.FontKitPixelLength = FontKitPixelLength;
 //# sourceMappingURL=FontKitPixelLength.node.js.map

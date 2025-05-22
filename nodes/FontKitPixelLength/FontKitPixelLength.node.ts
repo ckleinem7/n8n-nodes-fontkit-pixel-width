@@ -2,7 +2,7 @@ import type {IExecuteFunctions, INodeExecutionData, INodeType, INodeTypeDescript
 import {NodeConnectionType, NodeOperationError} from 'n8n-workflow';
 import {Font, openSync} from 'fontkit';
 
-export class ExampleNode implements INodeType {
+export class FontKitPixelLength implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Example Node',
 		name: 'exampleNode',
