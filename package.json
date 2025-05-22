@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-fontkit-pixel-width",
   "version": "0.1.0",
   "description": "",
   "keywords": [
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/ckleinem7/n8n-nodes-fontkit-pixel-width"
   },
   "engines": {
     "node": ">=20.15"
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "~8.32.0",
+    "@types/fontkit": "^2.0.8",
     "eslint": "^8.57.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.3",
     "gulp": "^5.0.0",
@@ -51,5 +52,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "fontkit": "^2.0.4"
   }
 }
