@@ -34,12 +34,25 @@ class FontKitPixelLength {
                     placeholder: 'output_key',
                     description: 'The output key',
                 },
+                {
+                    displayName: 'Font Size',
+                    name: 'fontSize',
+                    type: 'number',
+                    default: 16,
+                },
+                {
+                    displayName: 'Font Location',
+                    name: 'fontLocation',
+                    type: 'string',
+                    default: '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf',
+                }
             ],
         };
     }
     async execute() {
         const items = this.getInputData();
-        const fontArial = (0, fontkit_1.openSync)('/usr/share/fonts/truetype/msttcorefonts/Arial.ttf');
+        const fontLocation = this.getNodeParameter('fontLocation', 0, '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf');
+        const fontArial = (0, fontkit_1.openSync)(fontLocation);
         let item;
         let input;
         let outputKey;

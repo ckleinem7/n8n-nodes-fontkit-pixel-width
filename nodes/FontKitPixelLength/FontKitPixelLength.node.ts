@@ -34,13 +34,26 @@ export class FontKitPixelLength implements INodeType {
 				placeholder: 'output_key',
 				description: 'The output key',
 			},
+			{
+				displayName: 'Font Size',
+				name: 'fontSize',
+				type: 'number',
+				default: 16,
+			},
+			{
+				displayName: 'Font Location',
+				name: 'fontLocation',
+				type: 'string',
+				default: '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf',
+			}
 		],
 	};
 
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		const items = this.getInputData();
 
-		const fontArial: Font = openSync('/usr/share/fonts/truetype/msttcorefonts/Arial.ttf') as Font;
+		const fontLocation = this.getNodeParameter('fontLocation', 0, '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf') as string;
+		const fontArial: Font = openSync(fontLocation) as Font;
 
 		let item: INodeExecutionData;
 		let input: string;
