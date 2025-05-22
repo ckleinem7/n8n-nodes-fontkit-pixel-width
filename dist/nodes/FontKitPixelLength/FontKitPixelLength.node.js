@@ -12,7 +12,7 @@ class FontKitPixelLength {
             version: 1,
             description: 'Get the length of a html text in a specific font',
             defaults: {
-                name: 'Example Node',
+                name: 'FontKit Pixel Length',
             },
             inputs: ["main"],
             outputs: ["main"],

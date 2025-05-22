@@ -10,7 +10,7 @@ export class FontKitPixelLength implements INodeType {
 		version: 1,
 		description: 'Get the length of a html text in a specific font',
 		defaults: {
-			name: 'Example Node',
+			name: 'FontKit Pixel Length',
 		},
 		inputs: [NodeConnectionType.Main],
 		outputs: [NodeConnectionType.Main],
