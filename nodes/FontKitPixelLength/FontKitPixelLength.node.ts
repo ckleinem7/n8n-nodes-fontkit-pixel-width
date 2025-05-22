@@ -4,11 +4,11 @@ import {Font, openSync} from 'fontkit';
 
 export class FontKitPixelLength implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Example Node',
-		name: 'exampleNode',
+		displayName: 'FontKit Pixel Length',
+		name: 'fontKitPixelLength',
 		group: ['transform'],
 		version: 1,
-		description: 'Basic Example Node',
+		description: 'Get the length of a html text in a specific font',
 		defaults: {
 			name: 'Example Node',
 		},
